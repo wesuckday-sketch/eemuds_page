@@ -18,12 +18,19 @@
 
 <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
 
+
+
 <div id="jsdos" style="width:800px;height:600px"></div>
 <script>
     Dos(document.getElementById("jsdos"), {
         url: "doom.jsdos",
         autoStart: true
     });
+    
+//Blocks keyboard shortcuts
+window.addEventListener("keydown", (e) => {
+    e.preventDefault();
+})
 </script>
 
 
